@@ -54,7 +54,8 @@ module.exports = class zebitex extends Exchange {
             'api': {
                 'public': {
                     'get': [
-                        'orders/tickers'
+                        'orders/tickers',
+                        'orders/ticker_summary/{market}'
                     ],
                 },
                 'private': {
@@ -194,7 +195,7 @@ module.exports = class zebitex extends Exchange {
         const request = {
             'market': market['id'],
         };
-        const response = await this.publicPostReturnTicker (this.extend (request, params));
+        const response = await this.publicGetOrdersTickerSummary (this.extend (request, params));
         // { last: '0.0016550916',
         //   high: 'N/A',
         //   low: 'N/A',
