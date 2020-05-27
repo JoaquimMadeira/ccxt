@@ -163,7 +163,8 @@ const exchanges = {
     'xbtce':                   require ('./js/xbtce.js'),
     'yobit':                   require ('./js/yobit.js'),
     'zaif':                    require ('./js/zaif.js'),
-    'zb':                      require ('./js/zb.js'),    
+    'zb':                      require ('./js/zb.js'),
+    'zebitex':                 require ('./js/zebitex.js'),
 }
 
 //-----------------------------------------------------------------------------
