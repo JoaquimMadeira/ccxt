@@ -13,7 +13,7 @@ module.exports = class zebitex extends Exchange {
             'id': 'zebitex',
             'name': 'ZEBITEX',
             'countries': [ 'FR' ],
-            'rateLimit': 1500,
+            'rateLimit': 2500,
             'certified': false,
             'has': {
                 'fetchOrderBook': true,
